@@ -1,0 +1,9 @@
+cxx_binary(
+  name = 'iodbc-test', 
+  srcs = [
+    'iodbctest.c',
+  ],
+  deps = [
+    '//:iodbc',
+  ],
+)

@@ -16,6 +16,10 @@ cxx_library(
     'iodbc/**/*.c',
     'iodbcinst/**/*.c',
   ]),
+  platform_compiler_flags = [
+    ('default', ['-DNO_FRAMEWORKS', '-DMACOSX102']),
+    ('^macos.*', ['-DNO_FRAMEWORKS', '-DMACOSX102']),
+  ],
   visibility = [
     'PUBLIC',
   ],
