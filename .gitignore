@@ -66,3 +66,12 @@ mac/iODBCinst/build/
 mac/iODBCtest/build/
 mac/iODBCtestw/build/
 mac/include/
+
+#
+# Buck
+#
+/buck-out/
+/.buckd/
+/buckaroo/
+.buckconfig.local
+BUCKAROO_DEPS
